@@ -1,0 +1,45 @@
+body {
+    background-color: #80deea;
+    overflow: hidden;
+    }
+.jugar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#play {
+    cursor: pointer;
+}
+.container_contador {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#contador .btn {
+    border-radius: 5px;
+    width: auto;
+    height: 50px;
+    font-size: 45px;
+}
+#modal1 .btn {
+    background-color:#311b92;
+}
+.imagenes img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.imagenes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 8%;
+}
+#respuesta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    margin: 8%;
+}

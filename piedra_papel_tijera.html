@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="piedra_papel_tijera.css">
+</head>
+
+<body>
+  <div id="contador" class="container_contador">
+    <button class="boton_jugador btn disabled"><span id="contar_jugador">0</span></button>
+    <button class="boton_pc btn disabled"><span id="contar_pc">0</span></button>
+  </div>
+
+  <div id="ppt" class="imagenes center">
+    <img src="./piedra.jpg" width="200px" height="200px" alt="Piedra" onclick="eligio_piedra()">
+    <img src="./papel.jpg" width="200px" height="200px" alt="Papel" onclick="eligio_papel()">
+    <img src="./tijera.jpg" width="200px" height="200px" alt="Tijera" onclick="eligio_tijera()">
+  </div>
+
+  <div id="respuesta">
+  </div>
+
+  <div id="modal1" class="modal open hide" tabindex="0"
+    style="z-index: 1003; display: block; opacity: 1;width: 100%;background-color: #00bcd4; text-align: center; top: 25%; transform: scaleX(1) scaleY(1);">
+    <div class="modal-content">
+      <h4 id="ganador"></h4>
+      <h6 id="info_de_partida"></h6>
+      <button class="btn" onclick="seguir_jugando()">Seguir jugando</button>
+    </div>
+  </div>
+
+  <div id="modal_rondas" class="modal open show" tabindex="0"
+    style="z-index: 1003; display: block; opacity: 1;width: 100%; text-align: center; top: 25%; transform: scaleX(1) scaleY(1);">
+    <div class="modal-content">
+      <div class="container">
+        <input value="" id="rondas" type="text" class="center">
+        <label for="rondas">Numero de rondas</label>
+        <br>
+        <br>
+        <button class="btn large" onclick="validar_rondas()">Procesar rondas</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="piedra_papel_tijera.js"></script>
+
+</html>
